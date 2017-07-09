@@ -1,9 +1,21 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>A.N. blog</title>
 </head>
 <body>
-	<p>Waiting for update...... :(</p>
+	<div>
+        <h1> <a href="/"> Alexandr Nikitenko Blog </a> </h1>
+    </div>
+
+    {% for post in posts %}
+    	<div>
+    		<p> Published: {{ post.published_date }} </p>
+    		<h1> <a href=""> {{ post.title }} </a> </h1>
+    		<p> {{post.text | linebreaksbr }} </p>
+    	</div>
+    {% endfor %}	
+
+
 </body>
 </html>
