@@ -1,0 +1,47 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>A.N. blog</title>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet"> 
+        <link rel="shortcut icon" href="../static/img/favicon.png" type="image/png">
+    </head>
+    <body>
+        <div class = "page-header">
+            <h1><a href="/">Alex Nikitenko Blog</a></h1>
+        </div>
+
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+
+        <div class="page-footer">
+            <div class="footer">    
+                <p>Made by Alexandr Nikitenko</p>
+                <p>2017 All rights reserved &reg; </p>
+            </div>    
+        </div>
+
+
+
+
+
+
+
+        <!-- JAVA SCRIPT -->
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="{% static 'js/custom.js' %}"></script>
+
+    </body>
+</html>
