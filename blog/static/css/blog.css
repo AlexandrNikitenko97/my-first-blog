@@ -1,12 +1,19 @@
+body{
+	background-color: rgba(224,224,224,0.5) !important;
+	background-image: url(../img/body.jpg);
+	background-repeat: no-repeat;
+}
+
 h1 a {
     color: #FCA205;
     font-family: 'Lobster';
 }
 
 .page-header {
-    background-color: #ff9400;
+    background: linear-gradient(0deg, #D74177 , #FFE98A);
     margin: 0 !important;
     padding: 20px 20px 20px 40px !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5) !important;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
@@ -15,17 +22,12 @@ h1 a {
     text-decoration: none;
 }
 
-.content {
-    margin-left: 40px;
-}
-
 h1, h2, h3, h4 {
     font-family: 'Lobster', cursive;
 }
 
 .date {
     float: right;
-    color: #828282;
 }
 
 .save {
@@ -44,9 +46,41 @@ h1, h2, h3, h4 {
 }
 
 .post {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    text-align:justify;
+    font-family: 'Bellefair', serif;
+    font-size: 20px;
 }
 
 .post h1 a, .post h1 a:visited {
     color: #000000;
+    font-family: 'Lobster Two', cursive;
+    text-decoration: none;
+}
+
+.row{
+	background-color: rgba(224, 224, 224, 0.7);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.text{
+	clear: both;
+}
+
+.page-footer{
+	border-top: 1px solid rgba(0, 0, 0, 0.5);
+	font-family: 'Bellefair', serif;
+	text-align: center;
+	color: white;
+	font-size: 16px;
+}
+
+.footer{
+	background: linear-gradient(0deg, #D74177 , #FFE98A);
+	padding-top: 20px;
+	padding-bottom: 10px;
 }
