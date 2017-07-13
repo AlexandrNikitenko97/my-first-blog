@@ -1,7 +1,22 @@
+/*============ Сброс стилей =============*/
+
+*{
+	margin: 0;
+}
+
+html{
+	height: 100% !important;
+}
+
+/*============ Основные стили =============*/
+
 body{
 	background-color: rgba(224,224,224,0.5) !important;
 	background-image: url(../img/body.jpg);
 	background-repeat: repeat-y;
+	display: flex !important;
+	flex-direction: column !important;
+	height: 100% !important;
 }
 
 h1 a {
@@ -23,8 +38,8 @@ h1 a {
     text-decoration: none;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+.content{
+	flex-grow: 1 !important;
 }
 
 .date {
@@ -61,7 +76,7 @@ h1, h2, h3, h4 {
 }
 
 .row{
-	background-color: rgba(224, 224, 224, 0.7);
+	background-color: rgba(224, 224, 224, 0.8);
 	padding-top: 20px;
 	padding-bottom: 20px;
 	margin-top: 20px;
