@@ -1,7 +1,7 @@
 body{
 	background-color: rgba(224,224,224,0.5) !important;
 	background-image: url(../img/body.jpg);
-	background-repeat: no-repeat;
+	background-repeat: repeat-y;
 }
 
 h1 a {
@@ -13,7 +13,8 @@ h1 a {
     background: linear-gradient(0deg, #D74177 , #FFE98A);
     margin: 0 !important;
     padding: 20px 20px 20px 40px !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5) !important;
+    border-bottom: none !important;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
@@ -65,18 +66,20 @@ h1, h2, h3, h4 {
 	padding-bottom: 20px;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .text{
 	clear: both;
+	height: auto !important;
 }
 
 .page-footer{
-	border-top: 1px solid rgba(0, 0, 0, 0.5);
 	font-family: 'Bellefair', serif;
 	text-align: center;
 	color: white;
 	font-size: 16px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .footer{

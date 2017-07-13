@@ -1,11 +1,11 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    {% for post in posts %}
         <div class="post">
             <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-            <p class="text">{{ post.text|linebreaksbr }}</p>
+            <p class="text" style="height: 100%">{{ post.text|linebreaksbr }}</p>
+            {% if post.published_date %}
             <p class="date">{{ post.published_date }}</p><br>
+            {% endif %}
         </div>
-    {% endfor %}
 {% endblock content %}
