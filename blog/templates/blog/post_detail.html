@@ -2,8 +2,8 @@
 
 {% block content %}
         <div class="post">
-            <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-            <p class="text" style="height: 100%">{{ post.text|linebreaksbr }}</p>
+            <h1 class="detail-title">{{ post.title }}</h1>
+            <p class="text">{{ post.text|linebreaksbr }}</p>
             {% if post.published_date %}
             <p class="date">{{ post.published_date }}</p><br>
             {% endif %}

@@ -1,11 +1,29 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    {% for post in posts %}
+    <div class="post">
+        {% for post in posts %}
         <div class="post">
             <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
             <p class="text">{{ post.short_text|linebreaksbr }}</p>
             <p class="date">{{ post.published_date }}</p><br>
         </div>
-    {% endfor %}
+        {% endfor %}
+        <div id="pages" align="center">
+            <span class="current">
+                Page {{ posts.number }} of {{ posts.paginator.num_pages }}<br>
+            </span>
+            {% if posts.has_previous %}
+                <a href="?page={{ posts.previous_page_number }}" class="btn btn-default btn-xs" role="button">Previous page</a>
+                {% if posts.has_next %}
+                    <a href="?page={{ posts.next_page_number }}" class="btn btn-default btn-xs" role="button">Next page</a>
+                {% else %}
+                    <a href="/" class="btn btn-default btn-xs disabled" role="button">Next page</a>
+                {% endif %}
+            {% elif posts.has_next %}
+                <a href="/" class="btn btn-default btn-xs disabled" role="button">Previous page</a>
+                <a href="?page={{ posts.next_page_number }}" class="btn btn-default btn-xs" role="button">Next page</a>
+            {% endif %}
+        </div>
+    </div>
 {% endblock content %}
