@@ -8,14 +8,14 @@
         <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">  
         <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet"> 
-        <link rel="shortcut icon" href="../static/img/favicon.png" type="image/png">
+        <link rel="shortcut icon" href="../static/img/logos/favicon.png" type="image/png">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <div class = "page-header">
             <h1><a href="/">Alex Nikitenko Blog</a></h1>
             {% if user.is_authenticated %}
-            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <a href="{% url 'post_new' %}" class="top-menu" title="Add new post"><span class="glyphicon glyphicon-plus"></span></a>
             {% endif %}
         </div>
 

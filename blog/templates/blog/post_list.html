@@ -14,15 +14,15 @@
                 Page {{ posts.number }} of {{ posts.paginator.num_pages }}<br>
             </span>
             {% if posts.has_previous %}
-                <a href="?page={{ posts.previous_page_number }}" class="btn btn-default btn-xs" role="button">Previous page</a>
+                <a href="?page={{ posts.previous_page_number }}" class="btn btn-default btn-xs" role="button" id="page_button">Previous page</a>
                 {% if posts.has_next %}
-                    <a href="?page={{ posts.next_page_number }}" class="btn btn-default btn-xs" role="button">Next page</a>
+                    <a href="?page={{ posts.next_page_number }}" class="btn btn-default btn-xs" role="button" id="page_button">Next page</a>
                 {% else %}
-                    <a href="/" class="btn btn-default btn-xs disabled" role="button">Next page</a>
+                    <a href="/" class="btn btn-default btn-xs disabled" role="button" id="page_button">Next page</a>
                 {% endif %}
             {% elif posts.has_next %}
-                <a href="/" class="btn btn-default btn-xs disabled" role="button">Previous page</a>
-                <a href="?page={{ posts.next_page_number }}" class="btn btn-default btn-xs" role="button">Next page</a>
+                <a href="/" class="btn btn-default btn-xs disabled" role="button" id="page_button">Previous page</a>
+                <a href="?page={{ posts.next_page_number }}" class="btn btn-default btn-xs" role="button" id="page_button">Next page</a>
             {% endif %}
         </div>
     </div>

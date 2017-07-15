@@ -11,9 +11,7 @@ html{
 /*============ Main styles =============*/
 
 body{
-	background-color: rgba(224,224,224,0.5) !important;
-	background-image: url(../img/body.jpg);
-	background-repeat: repeat-y;
+	background-color: #3c3c3d !important;
 	display: flex !important;
 	flex-direction: column !important;
 	height: 100% !important;
@@ -44,8 +42,9 @@ h1 a {
 .top-menu, .top-menu:hover, .top-menu:visited {
     color: #ffffff;
     float: right;
-    font-size: 26pt;
+    font-size: 30pt;
     margin-right: 20px;
+    margin-top: 20px;
 }
 
 /*============ Content styles ============*/
@@ -94,8 +93,14 @@ h1 a {
 	color: #D74177;
 }
 
+#post_edit{
+	float: right;
+	margin-bottom: 15px;
+	margin-top: -15px;
+}
+
 .row{
-	background-color: rgba(224, 224, 224, 0.8);
+	background-color: rgba(224, 224, 224, 0.6);
 	padding-top: 20px;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -106,6 +111,17 @@ h1 a {
 	clear: both;
 	height: auto !important;
 }
+
+#page_button{
+	margin-top: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	width: 90px;
+	height: 30px;
+	font-size: 16px;
+	padding: 2px;
+}
+
+/*============ Footer styles ============*/
 
 .page-footer{
 	font-family: 'Bellefair', serif;
@@ -129,4 +145,23 @@ h1 a {
 #pages a {
 	text-decoration: none;
 	color: black;
+}
+
+/*============ Adding post form styles ============*/
+
+.new_post_title{
+	font-family: 'Lobster Two', cursive;
+	text-align: center;
+}
+
+.post-form{
+	font-family: 'Bellefair', serif;
+	font-size: 20px;
+}
+
+#save_button{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	width: 100px;
 }
