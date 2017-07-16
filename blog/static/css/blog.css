@@ -97,6 +97,10 @@ h1 a {
 	float: right;
 	margin-bottom: 15px;
 	margin-top: -15px;
+	margin-left: 10px;
+	height: 30px;
+	width: 65px;
+	padding: 0 auto;
 }
 
 .row{

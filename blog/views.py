@@ -57,5 +57,19 @@ def post_edit(request, pk):
 
 def post_draft_list(request):
 	""" Shows list of draft-posts. """
-	posts = Post.objects.filter(published_date__isnull=True).order_by('created_date')
+	posts = Post.objects.filter(published_date__isnull=True).order_by('-created_date')
 	return render(request, 'blog/post_draft_list.html', {'posts': posts})
+
+
+def post_publish(request, pk):
+	""" Publishing post, after adding post to draft list"""
+	post = get_object_or_404(Post, pk=pk)
+	post.publish()
+	return redirect('post_detail', pk=pk)
+
+
+def post_remove(request, pk):
+	""" Post removing. """
+	post = get_object_or_404(Post, pk=pk)
+	post.delete()
+	return redirect('post_list')
