@@ -1,4 +1,5 @@
-jQuery(document).ready(function() {
+// Background gradient on 360 degrees
+$(document).ready(function() {
 
 	var 
 		degrees = 0,
@@ -10,3 +11,9 @@ jQuery(document).ready(function() {
 		}, 30000 / 360);
 
 });
+
+
+// Approve deleting post
+$(document).on('click', '.confirm-delete', function(){
+    return confirm('Are you sure you want to delete this post?');
+})

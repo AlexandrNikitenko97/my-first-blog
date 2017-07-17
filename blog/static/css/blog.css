@@ -47,6 +47,50 @@ h1 a {
     margin-top: 20px;
 }
 
+/*============ Log in ============*/
+
+.form-login{
+	font-family: 'Bellefair', serif;
+	font-size: 20px;
+	text-align: center;
+}
+
+.form-login-error{
+	text-align: center;
+	font-family: 'Bellefair', serif;
+	color: red;
+	font-size: 20px;
+}
+
+.form-login-table{
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.form-login-table tr td {
+	padding-right: 10px;
+	font-size: 18px;
+}
+
+#login-submit{
+	font-size: 16px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	width: 70px;
+	height: 35px;
+}
+
+/*============ Log out ============*/
+
+.top-menu-user{
+	color: #ffffff;
+    float: right;
+    font-size: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-family: 'Bellefair', serif;
+}
+
 /*============ Content styles ============*/
 
 .content{
