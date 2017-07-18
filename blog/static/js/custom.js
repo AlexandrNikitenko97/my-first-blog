@@ -15,5 +15,8 @@ $(document).ready(function() {
 
 // Approve deleting post
 $(document).on('click', '.confirm-delete', function(){
-    return confirm('Are you sure you want to delete this post?');
+    return confirm('Are you sure you want to delete this?');
 })
+
+
+// Approve deleting comment
