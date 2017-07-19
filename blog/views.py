@@ -96,6 +96,7 @@ def add_comment_to_post(request, pk):
 	return render(request, 'blog/add_comment_to_post.html', {'form': form})
 
 
+
 @login_required
 def comment_remove(request, pk):
 	""" Delete existing comment. """
