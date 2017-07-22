@@ -96,10 +96,19 @@ def add_comment_to_post(request, pk):
 	return render(request, 'blog/add_comment_to_post.html', {'form': form})
 
 
-
 @login_required
 def comment_remove(request, pk):
 	""" Delete existing comment. """
 	comment = get_object_or_404(Comment, pk=pk)
 	comment.delete()
 	return redirect('post_detail', pk=comment.post.pk)
+
+
+def about_me(request):
+	""" Information about blog author. """
+	return render(request, 'blog/about_me.html', {})
+
+
+def contacts(request):
+	""" Author contatcs. """
+	return render(request, 'blog/contacts.html', {})
