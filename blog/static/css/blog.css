@@ -27,7 +27,7 @@ h1 a {
 .page-header {
     background: linear-gradient(0deg, #D74177 , #FFE98A);
     margin: 0 !important;
-    padding: 20px 20px 20px 40px !important;
+    padding: 30px 20px 40px 40px !important;
     border-bottom: none !important;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
@@ -318,6 +318,10 @@ h1 a {
 
 /*============ About me ============*/
 
+.about_me{
+  	margin: 0 auto;
+}
+
 .about-me-title{
 	font-family: 'Lobster Two', cursive;
 	text-align: center;
@@ -327,14 +331,15 @@ h1 a {
 
 .my_photo{
 	float: right;
-	height: 350px;
-	width: auto;
 	margin-right: 20px;
 	margin-bottom: 20px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	height: auto;
+	max-width: 100%;
+
 }
 
-.text-about{
+.about_me p{
 	font-family: 'Bellefair', serif;
 	margin-left: 20px;
 	float: left;
